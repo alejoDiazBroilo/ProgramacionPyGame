@@ -1,0 +1,44 @@
+Ingresar nombre en el menu
+
+    menu.add.text_input('Nombre :', default='Vinicius Junior')
+
+Menu base de pygame
+
+    menu = pygame_menu.Menu('Bienvenido', 400, 300)
+
+Agregar un tema al menu
+
+    menu = pygame_menu.Menu('Bienvenido', 400, 300,
+                       theme=pygame_menu.themes.THEME_BLUE)
+
+                       #Blue o algun color disponible
+
+Iniciar el juego desde el menu
+
+    from Pacman.pacman import Pacmanicon
+
+    # Necesitan esto en su juego para inicializarlo asi: 
+
+        Pacmanicon=pygame.image.load('Pacman/images/pacman.png')
+        pygame.display.set_icon(Pacmanicon)
+
+        # Fijense mi codigo y vean que onda
+
+Volver al menu
+
+    if event.key == pygame.K_ESCAPE: 
+            from menu import surface
+
+    # K_ESCAPE es el escape pero usen la que quieran
+
+
+
+
+
+
+
+
+
+LINKS
+
+    Menu: https://github.com/ppizarror/pygame-menu/blob/master/docs/index.rst
